@@ -1,3 +1,7 @@
 .hero {
-    background-image: url("./images/stil-354979-unsplash.jpg");
+    background: url("./images/jessy-smith-500353-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
 }

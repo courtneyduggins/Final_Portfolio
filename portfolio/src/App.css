@@ -22,6 +22,14 @@
   color: #61dafb;
 }
 
+.Carousel-space {
+ margin-left: 360px;
+ margin-top: 100px;
+ padding: 0;
+}
+.main {
+  background-image: url("./images/spiration-light.png");
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

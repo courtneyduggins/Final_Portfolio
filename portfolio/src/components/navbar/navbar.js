@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Collapse,
   Navbar,
@@ -11,6 +12,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -30,7 +32,7 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Welcome!</NavbarBrand>
+          <NavbarBrand className="firstName" href="/">Courtney Duggins</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
