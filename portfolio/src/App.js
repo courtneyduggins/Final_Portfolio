@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Example from './components/navbar/navbar';
-import Hero from './components/jumbotron/jumbotron';
 import PhotoSpin from './components/carousel/carousel';
 // import logo from './logo.svg';
 import './App.css';
