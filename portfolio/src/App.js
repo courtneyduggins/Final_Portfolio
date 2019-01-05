@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Example from './components/navbar/navbar';
-import PhotoSpin from './components/carousel/carousel';
+import Example from './components/Navbar/navbar';
+import PhotoSpin from './components/Carousel/carousel';
 // import logo from './logo.svg';
 import './App.css';
 // import PhotoSpin from './components/carousel/carousel';

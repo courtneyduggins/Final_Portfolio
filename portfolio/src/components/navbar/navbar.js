@@ -1,5 +1,5 @@
 import React from 'react';
-import './'
+// import './navbar.css';
 import {
   Collapse,
   Navbar,
@@ -12,7 +12,19 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-  
+
+
+const myName = {
+  color: 'rgb(255, 80, 80)',
+  fontweight: 'bold',
+  fontFamily: 'Satisfy, cursive',
+  fontsize: 'large'
+ 
+}
+
+const linkStyle = {
+  color: 'rgb(0, 128, 96)'
+}
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -32,31 +44,34 @@ export default class Example extends React.Component {
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand className="firstName" href="/">Courtney Duggins</NavbarBrand>
+          <NavbarBrand style={myName} href="/">Courtney Duggins</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Home</NavLink>
+                <NavLink href="/components/" style={linkStyle}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Contact</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap" style={linkStyle}>Contact</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Projects
+                <DropdownToggle nav caret style={linkStyle}>
+                  Projects 
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    Trivia Game
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    Thirsty?
+                  </DropdownItem>
+                  <DropdownItem>
+                    Travel Application
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
+                  {/* <DropdownItem>
+                    Nope Travel App
+                  </DropdownItem> */}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
