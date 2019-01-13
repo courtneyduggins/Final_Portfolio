@@ -16,6 +16,7 @@ class App extends Component {
       //  <About/>
       <div className="main">
       <Hero/>
+      <About/>
         {/* <div className="Navigation-bar">
           <Example />
           <div className="Carousel-space">
