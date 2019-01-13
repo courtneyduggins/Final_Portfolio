@@ -15,7 +15,7 @@ import {
 
 
 const myName = {
-  color: 'rgb(255, 80, 80)',
+  color: 'rgb(0, 179, 143)',
   fontweight: 'bold',
   fontFamily: 'Satisfy, cursive',
   fontsize: 'large'
@@ -23,10 +23,14 @@ const myName = {
 }
 
 const linkStyle = {
-  color: 'rgb(0, 128, 96)'
+  color: 'rgb(255, 80, 80)'
 }
 
-export default class Example extends React.Component {
+const otherLinks = {
+  color: 'rgb(89, 89, 89)'
+}
+
+export default class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -52,10 +56,10 @@ export default class Example extends React.Component {
                 <NavLink href="/components/" style={linkStyle}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" style={linkStyle}>Contact</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap" style={otherLinks}>Contact</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret style={linkStyle}>
+                <DropdownToggle nav caret style={otherLinks}>
                   Projects 
                 </DropdownToggle>
                 <DropdownMenu right>

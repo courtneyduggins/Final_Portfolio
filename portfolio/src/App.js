@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
-import Example from './components/Navbar/navbar';
+import Hero from './components/Jumbotron/jumbotron';
+import NavigationBar from './components/Navbar/navbar';
 import PhotoSpin from './components/Carousel/carousel';
+import About from './pages/about';
 // import logo from './logo.svg';
 import './App.css';
 // import PhotoSpin from './components/carousel/carousel';
 
+
+
 class App extends Component {
   render() {
     return (
+      // <div className="mymodal">
+      //  <About/>
       <div className="main">
-        <div className="Navigation-bar">
+      <Hero/>
+        {/* <div className="Navigation-bar">
           <Example />
           <div className="Carousel-space">
             <PhotoSpin />
           </div>
-        </div>
+        </div> */}
       </div>
+     /* </div> */
     
       
     

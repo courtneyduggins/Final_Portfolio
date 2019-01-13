@@ -1,7 +1,74 @@
 .hero {
-    background: url("./images/jessy-smith-500353-unsplash.jpg") no-repeat center center;
+    background: url("https://images.unsplash.com/photo-1532595651976-8376d3a7679b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60") no-repeat center center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
-
+    height: 750px;
+    width: 100%;    
 }
+
+  /* .myName {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap; */
+    /* letter-spacing: .15em; */
+    /* margin-top: 100px;
+    margin-right: 40px;
+    font-size: 65px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    color: aliceblue;
+     animation: type 3.5s steps(16, end),
+    blink-caret .75s step-end infinite;  */
+/* } */
+
+h2, .myTitle {
+    visibility: hidden;
+    overflow: hidden;
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+    margin: 0 auto;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typing2 3.5s steps(23, end),
+    blinking-cursor 3.75s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    
+    /* animation: typing2 3.5s steps(21, end); */
+   
+    /* margin-left: 275px; */
+}
+
+p {
+    text-align: center;
+    color: aliceblue;
+    margin-left: 325px;
+    
+}
+.myName {
+    color: #f0f8ff;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    letter-spacing: .10em;
+    margin: 85px auto 0px 450px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    animation: typing 3.5s steps(16, end),
+    blinking-cursor 3.75s;
+    
+    /* -webkit-transition-timing-function: ease-in-out; */
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 42% }
+  }
+  @keyframes typing2 {
+    from {width: 0}
+    to { visibility: visible;
+        width: 42% }
+  }
+  @keyframes blinking-cursor {
+    from, to { border-color: transparent }
+    50% { border-color:orchid; }
+  } 

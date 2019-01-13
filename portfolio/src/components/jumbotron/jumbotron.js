@@ -8,10 +8,17 @@ const Hero = (props) => {
     
     <div>
       <Jumbotron fluid  className="hero">
+      
+      {/* <div className="w3-container w3-animate-right"> */}
         <Container fluid>
-          <h1 className="display-3">Fluid jumbotron</h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <div className="testArea">
+          <h1 className="display-3 myName">Courtney Duggins</h1>
+          <h2 className="lead myTitle">Front-End Web Developer</h2>
+          <p className="lead myCert">Cert. 12/15/18</p>
+          </div>
         </Container>
+        
+        {/* </div> */}
       </Jumbotron>
     </div>
   );

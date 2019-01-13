@@ -6,10 +6,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./images/spiration-light.png");
+  /* background-image: url("https://www.bing.com/th?id=OIP.q8wnZNnLR_k5iSo884ev9AHaKN&w=154&h=211&c=7&o=5&dpr=2&pid=1.7"); */
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
