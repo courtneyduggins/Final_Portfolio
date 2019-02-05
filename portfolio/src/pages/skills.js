@@ -28,8 +28,14 @@ const sectionTitle = {
     backgroundPosition: '550px 52px',
 }
 
+const topRowStyle = {
+    marginLeft: '125px'
+}
+
 const imgStyle = {
-    
+    height: '205px',
+    width: '205px',
+    margin: '25px'
 }
 
 class Skills extends React.Component {
@@ -38,19 +44,20 @@ class Skills extends React.Component {
         return (
             <div>
                 <div className="mySkills" style={sectionTitle}>Technical Skills</div>
-                <div className="skillsSec">
+                <div className="skillsSec" style={topRowStyle}>
                     <div className="topRow">
-                        <img src={html} alt="html-logo"></img>
-                        <img src={css} alt="css-logo"></img>
+                        <img src={html} style={imgStyle} alt="html-logo"></img>
+                        <img src={css} style={imgStyle} alt="css-logo"></img>
                         <img src={bootstrap} alt="bootstrap-logo"></img>
-                        <img src={java} alt="javascript-logo"></img>
-                        <img src={jquery} alt="jquery-logo"></img>
+                        <img src={java} style={imgStyle} alt="javascript-logo"></img>
+                        <img src={jquery} style={imgStyle} alt="jquery-logo"></img>
                     </div>
                     <div className="bottowRow">
-                        <img src={mongo} alt="mongodb-logo"></img>
-                        <img src={express} alt="express-logo"></img>
-                        <img src={react} alt="react-logo"></img>
-                        <img src={node} alt="node-logo"></img>
+                        <img src={mongo} style={imgStyle} alt="mongodb-logo"></img>
+                        <img src={express} style={imgStyle} alt="express-logo"></img>
+                        <img src={react} style={imgStyle} alt="react-logo"></img>
+                        <img src={node} style={imgStyle} alt="node-logo"></img>
+                        <img src={mySQL} style={imgStyle} alt="mySQL"></img>
                     </div>
                 </div>
                 
