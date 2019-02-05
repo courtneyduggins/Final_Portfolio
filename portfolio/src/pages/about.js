@@ -2,7 +2,7 @@ import React from "react";
 
 
 const profilePic = require('../images/IMG_0625.jpeg');
-const sectionDivider = require('../images/th.jpg')
+const sectionDivider = require('../images/th.jpg');
 
 const picStyle = {
   display: 'in-line',
@@ -22,6 +22,7 @@ const title = {
   marginTop: '105px',
   marginRight: '260px',
   marginBottom: '100px',
+  paddingBottom: '20px',
   backgroundImage: 'url(' + sectionDivider + ')',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: '550px 40px',
