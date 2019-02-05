@@ -3,7 +3,8 @@ import { Button } from 'reactstrap';
 // import { Link } from 'react-router-dom';
 
 const buttonStyle = {
-    float: 'right'
+    float: 'right',
+    marginRight: '10px'
 }
 
 export default class Resume extends React.Component {

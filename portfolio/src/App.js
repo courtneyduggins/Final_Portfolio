@@ -7,6 +7,7 @@ import PhotoSpin from './components/Carousel/carousel';
 import Resume from './components/ResumeBtn/resumeBtn';
 import About from './pages/about';
 import Skills from './pages/skills';
+import Portfolio from './pages/portfolio'
 // import logo from './logo.svg';
 import './App.css';
 // import PhotoSpin from './components/carousel/carousel';
@@ -24,6 +25,7 @@ class App extends Component {
           <Resume/>
           </Link>
           <Skills/>
+          <Portfolio/>
           {/* <Route exact path="/" component={Resume} />  */}
           {/* <Route exact path="/about" component={About} />
           <Route exact path="/blog" component={Blog} /> */}
