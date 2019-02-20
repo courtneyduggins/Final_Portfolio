@@ -2,7 +2,8 @@
     background: url("https://images.unsplash.com/photo-1532595651976-8376d3a7679b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60") no-repeat center center;
     background-size: cover;
     height: 750px;
-    width: 100%;    
+    width: 100%;  
+    margin-bottom: 0px;  
 }
 
   /* .myName {

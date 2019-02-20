@@ -1,4 +1,6 @@
 import React from 'react';
+import Skills from '../../pages/skills';
+import { Link } from 'react-router-dom';
 // import './navbar.css';
 
 import {
@@ -15,16 +17,21 @@ import {
   DropdownItem } from 'reactstrap';
 
 
-const myName = {
-  color: 'rgb(0, 179, 143)',
-  fontweight: 'bold',
-  fontFamily: 'Satisfy, cursive',
-  fontsize: 'large'
+const links = {
+  padding: "15px",
+  fontSize: "large",
  
 }
 
+
+const navStyle = {
+  top: '0px',
+  borderBottom: "6px solid lightgrey",
+  
+}
+
 const linkStyle = {
-  color: 'rgb(255, 80, 80)'
+  color: 'rgb(0, 176, 178)'
 }
 
 const otherLinks = {
@@ -32,6 +39,11 @@ const otherLinks = {
 }
 
 export default class NavigationBar extends React.Component {
+
+  scrollPage = () => {
+      var content = document.getElementById("")
+  }
+  
   constructor(props) {
     super(props);
 
@@ -47,19 +59,30 @@ export default class NavigationBar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={navStyle}>
         <Navbar color="light" light expand="md">
-          <NavbarBrand style={myName} href="/">Courtney Duggins</NavbarBrand>
+          {/* <NavbarBrand style={myName} href="/">Courtney Duggins</NavbarBrand> */}
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto" style={links} navbar>
               <NavItem>
                 <NavLink href="/components/" style={linkStyle}>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap" style={otherLinks}>Contact</NavLink>
+                <NavLink>About</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+              <NavItem>
+                
+                <NavLink>Skills</NavLink>
+                
+              </NavItem>
+              <NavItem>
+                <NavLink>Portfolio</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={otherLinks}>Contact</NavLink>
+              </NavItem>
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret style={otherLinks}>
                   Projects 
                 </DropdownToggle>
@@ -77,8 +100,8 @@ export default class NavigationBar extends React.Component {
                   {/* <DropdownItem>
                     Nope Travel App
                   </DropdownItem> */}
-                </DropdownMenu>
-              </UncontrolledDropdown>
+                {/* </DropdownMenu> */}
+              {/* </UncontrolledDropdown> */} 
             </Nav>
           </Collapse>
         </Navbar>

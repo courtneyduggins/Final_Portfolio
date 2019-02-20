@@ -14,7 +14,7 @@ const sectionTitle = {
     paddingBottom: '35px',
     backgroundImage: 'url(' + sectionDivider + ')',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: '550px 52px',
+    backgroundPosition: '565px 52px',
 }
 
 class Portfolio extends React.Component {

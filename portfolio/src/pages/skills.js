@@ -44,24 +44,23 @@ class Skills extends React.Component {
         return (
             <div>
                 <div className="mySkills" style={sectionTitle}>Technical Skills</div>
-                <div className="skillsSec" style={topRowStyle}>
-                    <div className="topRow">
-                        <img src={html} style={imgStyle} alt="html-logo"></img>
-                        <img src={css} style={imgStyle} alt="css-logo"></img>
-                        <img src={bootstrap} alt="bootstrap-logo"></img>
-                        <img src={java} style={imgStyle} alt="javascript-logo"></img>
-                        <img src={jquery} style={imgStyle} alt="jquery-logo"></img>
-                    </div>
-                    <div className="bottowRow">
-                        <img src={mongo} style={imgStyle} alt="mongodb-logo"></img>
-                        <img src={express} style={imgStyle} alt="express-logo"></img>
-                        <img src={react} style={imgStyle} alt="react-logo"></img>
-                        <img src={node} style={imgStyle} alt="node-logo"></img>
-                        <img src={mySQL} style={imgStyle} alt="mySQL"></img>
+                    <div className="skillsSec" style={topRowStyle}>
+                        <div className="topRow">
+                            <img src={html} style={imgStyle} alt="html-logo"></img>
+                            <img src={css} style={imgStyle} alt="css-logo"></img>
+                            <img src={bootstrap} alt="bootstrap-logo"></img>
+                            <img src={java} style={imgStyle} alt="javascript-logo"></img>
+                            <img src={jquery} style={imgStyle} alt="jquery-logo"></img>
+                        </div>   
+                        <div className="bottowRow">
+                            <img src={mongo} style={imgStyle} alt="mongodb-logo"></img>
+                            <img src={express} style={imgStyle} alt="express-logo"></img>
+                            <img src={react} style={imgStyle} alt="react-logo"></img>
+                            <img src={node} style={imgStyle} alt="node-logo"></img>
+                            <img src={mySQL} style={imgStyle} alt="mySQL"></img>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
         );
 
 

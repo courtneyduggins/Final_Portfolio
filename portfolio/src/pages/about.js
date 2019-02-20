@@ -46,7 +46,7 @@ class About extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="about">
         <div className="profilePic">
           <img src={profilePic} style={picStyle} alt="profilePic" />
         </div>
