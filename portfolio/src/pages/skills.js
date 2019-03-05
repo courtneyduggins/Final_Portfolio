@@ -29,14 +29,19 @@ const sectionTitle = {
 }
 
 const topRowStyle = {
-    marginLeft: '125px'
+    marginLeft: '125px',
+  
 }
 
 const imgStyle = {
     height: '205px',
     width: '205px',
-    margin: '25px'
+    margin: '25px',
+    filter: 'grayscale(1)',
+    webkitFilter: 'grayscale(1)'
+
 }
+
 
 class Skills extends React.Component {
 
@@ -48,7 +53,7 @@ class Skills extends React.Component {
                         <div className="topRow">
                             <img src={html} style={imgStyle} alt="html-logo"></img>
                             <img src={css} style={imgStyle} alt="css-logo"></img>
-                            <img src={bootstrap} alt="bootstrap-logo"></img>
+                            <img src={bootstrap} style={imgStyle} alt="bootstrap-logo"></img>
                             <img src={java} style={imgStyle} alt="javascript-logo"></img>
                             <img src={jquery} style={imgStyle} alt="jquery-logo"></img>
                         </div>   
