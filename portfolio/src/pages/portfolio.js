@@ -19,6 +19,13 @@ const sectionTitle = {
     backgroundPosition: '565px 52px',
 }
 
+const portImg = {
+    margin: '50px',
+    height: '300px',
+    width: '400px',
+    // border: '4px ridge black'
+}
+
 class Portfolio extends React.Component {
 
     render() {
@@ -28,9 +35,9 @@ class Portfolio extends React.Component {
                     <div className="myProjects" style={sectionTitle}>Portfolio</div>
                 </div>
                 <div className="classProjects">
-                    <img src={friendsTrivia} alt="trivia-game"></img>
-                    <img src={beer} alt="beer-app"></img>
-                    <img src={train} alt="train-app"></img>
+                    <img src={friendsTrivia} alt="trivia-game" style={portImg}></img>
+                    <img src={beer} alt="beer-app" style={portImg}></img>
+                    <img src={train} alt="train-app" style={portImg}></img>
                 </div>
             </div>
         );
